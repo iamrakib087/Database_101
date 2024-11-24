@@ -82,3 +82,8 @@ print(res.fetchall())
 ```SQL
 DELETE FROM table_name WHERE column_name = 'value'
 ```
+## How to update a row from a talble in sqlite3
+
+```SQL
+cur.execute("""UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition""") """ is used for multiple line of commands 
+```
