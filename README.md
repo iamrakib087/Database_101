@@ -77,3 +77,8 @@ con.commit() # this will add the data into the database
 print(res.fetchall())
     
 ```
+## How to delete a row from a talble in sqlite3
+
+```SQL
+DELETE FROM table_name WHERE column_name = 'value'
+```
