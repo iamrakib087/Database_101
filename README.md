@@ -87,3 +87,26 @@ DELETE FROM table_name WHERE column_name = 'value'
 ```SQL
 cur.execute("""UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition""") """ is used for multiple line of commands 
 ```
+### How to delete a table in sqlite3
+```SQL
+DROP TABLE table_name;
+```
+
+## How to set a column as primary key in sqlite3
+
+- Rename the existing table
+```SQL	
+ ALTER TABLE old_table_name RENAME TO new_table_name;
+ ```
+
+- make a new table with the same name as the old talble
+- set the primary key in the new table
+Example:
+```SQL	
+cur.execute("CREATE TABLE employee(name TEXT , age INTEGER , salary REAL, department TEXT, id INTEGER PRIMARY KEY)")
+```
+- Copy the whole data from the old table
+```SQL
+cur.execute("INSERT INTO new_table SELECT * FROM table_old")
+```
+- remove the whole table
