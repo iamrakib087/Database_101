@@ -3,7 +3,7 @@ con = sqlite3.connect("class_work.db")
 
 cur = con.cursor()
 
-# Question 1 
+# Question_1 
 
 # cur.execute("CREATE TABLE Employees(EmployeeID PRIMARY KEY, Name, Position, Salary)")
 # cur.execute("""
@@ -31,7 +31,7 @@ cur = con.cursor()
 
 
 
-# Question 2
+# Question_2
 # cur.execute("CREATE TABLE Products(ProductID PRIMARY KEY, ProductName, Category, Price, Stock)")
 # cur.execute("""
 #             INSERT INTO Products VALUES('1', 'Laptop', 'Electronics', '1000','50'),
@@ -57,7 +57,7 @@ cur = con.cursor()
 
 
 
-# Question 3
+# Question_3
 # cur.execute("CREATE TABLE Students(StudentID PRIMARY KEY, Name, Course, Grade)")
 # cur.execute("""
 #             INSERT INTO Students VALUES('1', 'John', 'Mathematics', 'B'),
