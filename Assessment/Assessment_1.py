@@ -22,15 +22,6 @@ cur = con.cursor()
 #             """)
 
 
-
-
-
-
-
-
-
-
-
 # Question_2
 # cur.execute("CREATE TABLE Products(ProductID PRIMARY KEY, ProductName, Category, Price, Stock)")
 # cur.execute("""
@@ -55,8 +46,6 @@ cur = con.cursor()
 
 
 
-
-
 # Question_3
 # cur.execute("CREATE TABLE Students(StudentID PRIMARY KEY, Name, Course, Grade)")
 # cur.execute("""
@@ -75,9 +64,6 @@ cur = con.cursor()
 #             SET Grade = 'B'
 #             WHERE Name = 'Michael' AND Course = 'Chemistry'
 #             """)
-
-
-
 
 
 
